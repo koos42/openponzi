@@ -4,6 +4,9 @@ gem 'sinatra'
 gem 'heroku'
 gem 'datamapper', '= 1.1.0'
 gem 'rack-flash'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 group :development do
   gem 'sqlite3-ruby'

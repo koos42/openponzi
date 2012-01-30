@@ -54,7 +54,12 @@ GEM
       data_objects (= 0.10.7)
     do_sqlite3 (0.10.7)
       data_objects (= 0.10.7)
+    faraday (0.7.6)
+      addressable (~> 2.2)
+      multipart-post (~> 1.1)
+      rack (~> 1.1)
     fastercsv (1.5.4)
+    hashie (1.2.0)
     heroku (2.18.1)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
@@ -64,7 +69,26 @@ GEM
     launchy (2.0.5)
       addressable (~> 2.2.6)
     mime-types (1.17.2)
-    rack (1.4.0)
+    multi_json (1.0.4)
+    multipart-post (1.1.4)
+    oauth (0.4.5)
+    oauth2 (0.5.2)
+      faraday (~> 0.7)
+      multi_json (~> 1.0)
+    omniauth (1.0.2)
+      hashie (~> 1.2)
+      rack
+    omniauth-facebook (1.2.0)
+      omniauth-oauth2 (~> 1.0.0)
+    omniauth-oauth (1.0.0)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.0.0)
+      oauth2 (~> 0.5.0)
+      omniauth (~> 1.0)
+    omniauth-twitter (0.0.7)
+      omniauth-oauth (~> 1.0)
+    rack (1.4.1)
     rack-flash (0.1.2)
       rack
     rack-protection (1.2.0)
@@ -102,6 +126,9 @@ DEPENDENCIES
   dm-postgres-adapter
   dm-sqlite-adapter
   heroku
+  omniauth
+  omniauth-facebook
+  omniauth-twitter
   rack-flash
   rack-test
   rspec
